@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Country Explorer</title>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<header>
+<h1>Country Explorer</h1>
+<p>Search any country to view its details and neighboring countries</p>
+</header>
+
+<main>
+
+<div class="search-container">
+
+<input 
+type="text" 
+id="country-input" 
+placeholder="Enter country name..."
+>
+
+<button id="search-btn">Search</button>
+
+</div>
+
+<div id="loading-spinner" class="spinner hidden"></div>
+
+<section id="country-info" class="country-card hidden">
+
+<!-- Country information appears here -->
+
+</section>
+
+<section id="bordering-countries" class="border-grid hidden">
+
+<!-- Bordering countries appear here -->
+
+</section>
+
+<div id="error-message" class="error hidden"></div>
+
+</main>
+
+<footer>
+
+<p>Country Explorer • REST Countries API</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
